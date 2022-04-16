@@ -12,17 +12,17 @@ body {
 .context {
   width: 100%;
   position: absolute;
-  top: 50vh;
+  top: 20vh;
 }
 
 .context h1 {
   text-align: center;
-  color: #EDE6DB;
+  color: #B5EAEA;
   font-size: xx-large;
 }
 
 .area {
-  background: -webkit-linear-gradient(top, #1D5C63, #417D7A);
+  background: -webkit-linear-gradient(top, #F38BA0, #FFBCBC);
   width: 100%;
   height: 100vh;
 }
@@ -37,29 +37,21 @@ body {
 }
 
 .shapes li {
-  position: absolute;
+  position: relative;
   display: block;
-  list-style: none;
-  background: #EDE6DB;
+  background: #EDF6E5;
   animation: animate 25s linear infinite;
-  bottom: -100px;
 }
 
 @keyframes animate {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
+  from {
+    transform: scale(1.2) translateY(0) rotate(0);
+    opacity: 0.8;
     border-radius: 0%;
   }
 
-  25% {
-    transform: translateY(-500px) rotate(360deg);
-    opacity: 0.4;
-    border-radius: 50%;
-  }
-
-  100% {
-    transform: translateY(-1000px) rotate(720deg);
+  to {
+    transform: scale(0.3) translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 100%;
   }
